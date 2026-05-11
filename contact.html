@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hh.css">
+    <script src="contact.js" defer></script>
+    <title>Contact</title>
+</head>
+<body>
+    <nav class="nav1">
+        <h1 class="t1">Big time To time</h1>
+
+        <ul>
+            <li><a href="FORMULE.html">Home</a></li>
+            <li><a href="FORMULE.html#records">Time</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="div1 contact-page">
+        <section class="contact-card">
+            <h2>Contact</h2>
+            <p>Si vous avez un probl&egrave;me ou une remarque, vous pouvez envoyer un message.</p>
+
+            <div class="contact-info">
+                <p><strong>Nom :</strong> Radwan Amari</p>
+                <p><strong>Gmail :</strong> <a href="mailto:Nelson7@gmail.com">rdwanmary954@gmail.com</a></p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <label for="visitorName">Votre nom</label>
+                <input type="text" id="visitorName" name="visitorName" placeholder="Votre nom">
+
+                <label for="messageType">Sujet</label>
+                <select id="messageType" name="messageType">
+                    <option value="Probleme">Probl&egrave;me</option>
+                    <option value="Note">Note</option>
+                    <option value="Question">Question</option>
+                </select>
+
+                <label for="messageText">Message</label>
+                <textarea id="messageText" name="messageText" rows="7" placeholder="Ecrivez votre probleme ou votre note ici"></textarea>
+
+                <button type="submit">Envoyer par Gmail</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

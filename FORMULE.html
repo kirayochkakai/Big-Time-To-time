@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="google2269e3dffa264055.html">
+    <link rel="stylesheet" href="hh.css">
+    <script src="pro.js" defer></script>
+    <title>Emploi du temps</title>
+</head>
+<body>
+    <nav class="nav1">
+        <h1 class="t1">Big time To time</h1>
+
+        <ul>
+            <li><a href="FORMULE.html">Home</a></li>
+            <li><a href="#records">Time</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="div1">
+        <h2 class="t3">Organize your week</h2>
+        <p class="p1">
+            Use this template to plan your week. You can fill in the days, times,
+            and tasks to create a personalized schedule that helps you stay organized
+            and productive.
+        </p>
+
+        <form id="myForm">
+            <table border="1">
+                <caption>
+                    <h2 class="t2">Programme your time</h2>
+                </caption>
+                <tbody id="scheduleBody"></tbody>
+            </table>
+
+            <nav class="nav2">
+                <button type="button" onclick="resetForm()">Delete</button>
+                <button type="button" onclick="saveData()">SAVE</button>
+                <button type="button" onclick="enableNotifications()">Activer notifications</button>
+                <button type="button" onclick="downloadSchedule()">T&eacute;l&eacute;charger</button>
+            </nav>
+        </form>
+
+        <section class="records-section" id="records">
+            <div class="records-header">
+                <h2>Time</h2>
+                <p>Tous les emplois du temps enregistr&eacute;s par l'utilisateur sont stock&eacute;s ici.</p>
+            </div>
+
+            <div class="records-actions">
+                <button type="button" onclick="clearScheduleRecords()">Effacer les enregistrements</button>
+            </div>
+
+            <div class="records-list" id="scheduleRecords"></div>
+        </section>
+    </div>
+</body>
+</html>
